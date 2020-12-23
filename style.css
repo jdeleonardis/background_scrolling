@@ -1,0 +1,33 @@
+html { 
+    background: url(images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  .marquee {
+    width: 450px;
+	height: 450px;
+	/* text-align: center; */
+    color: white;
+    border: 1px solid white;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.marquee div {
+    display: inline-block;
+    padding-top: 100%;
+    animation: marquee 25s linear infinite;
+    /* animation: marquee 2s linear;
+    animation-iteration-count: 1; */
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(0, -100%); }
+}
